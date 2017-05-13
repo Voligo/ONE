@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ONE</string>
+    <string name="title_home">Home</string>
+    <string name="person">个人</string>
+    <string name="home">主页</string>
+    <string name="reading">文章</string>
+    <string name="question">问题</string>
+    <string name="one">一个</string>
+</resources>

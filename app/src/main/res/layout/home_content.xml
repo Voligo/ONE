@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sv_home"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/value_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:text="VOL. 1673" />
+
+        <ImageView
+            android:id="@+id/home_iv"
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/value_tv"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_iv"
+            android:gravity="end"
+            android:paddingTop="15dp"
+            android:text="插画"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            android:id="@+id/home_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_tv"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="08"
+                    android:textColor="@color/one_blue"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/date1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="May,2017"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="这个世界队友好旳人很不友好，主动结束冷战的人，往往落不得个好下场。"
+                android:textSize="18sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home_like_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/home_like_selector" />
+
+            <TextView
+                android:id="@+id/like_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="1112"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:background="@drawable/home_likebg"-->
+        <!--android:orientation="horizontal">-->
+
+    <!--</LinearLayout>-->
+    </RelativeLayout>
+</ScrollView>
