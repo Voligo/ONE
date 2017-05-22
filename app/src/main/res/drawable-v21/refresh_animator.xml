@@ -1,0 +1,7 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawable="@drawable/refresh">
+        <target
+            android:animation="@animator/rotation"
+            android:name="rotation"/>
+</animated-vector>
+

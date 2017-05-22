@@ -12,5 +12,4 @@ public class GlobalContants {
     public static final String PICTURE_SERVER_URl = "http://v3.wufazhuce.com:8000/api/hp/idlist/0?version=3.5.0&platform=android";
     public static final String PICTUER_CONTENT_URL = "http://v3.wufazhuce.com:8000/api/hp/detail/";
     public static final String SERVER_URL_SUFFIX = "?version=3.5.0&platform=android";
-    fdjknfjn
 }

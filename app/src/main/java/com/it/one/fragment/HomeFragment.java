@@ -1,10 +1,9 @@
 package com.it.one.fragment;
 
-import android.os.Bundle;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.it.one.adapter.HomeFragmentAdapter;
+import com.it.one.adapter.ContentAdapter;
 import com.it.one.domain.BaseData;
 import com.it.one.global.GlobalContants;
 import com.lidroid.xutils.HttpUtils;
@@ -58,18 +57,20 @@ public class HomeFragment extends ContentFragment {
         Gson gson = new Gson();
         idLIst = gson.fromJson(result, BaseData.class);
         Log.i("解析结果：", idLIst.toString());
-        HomeFragmentAdapter adapter = new HomeFragmentAdapter(getFragmentManager());
 
-        int size = idLIst.data.size();
-        for (int i = 0; i < size; i++) {
-            String id = idLIst.data.get(i);
-            Bundle bundle = new Bundle();
-            bundle.putString("id", id);
-            HomeContent content = new HomeContent();
-            content.setArguments(bundle);
-            adapter.addFragment(content);
-        }
+//        HomeFragmentAdapter adapter = new HomeFragmentAdapter(getFragmentManager());
+//        int size = idLIst.data.size();
+//        for (int i = 0; i < size; i++) {
+//            String id = idLIst.data.get(i);
+//            Bundle bundle = new Bundle();
+//            bundle.putString("id", id);
+//            HomeContent content = new HomeContent();
+//            content.setArguments(bundle);
+//            adapter.addFragment(content);
+//        }
+        ContentAdapter adapter = new ContentAdapter(idLIst.data,getActivity());
         vpInfo.setAdapter(adapter);
+        vpInfo.setCurrentItem(0);
     }
 
 }

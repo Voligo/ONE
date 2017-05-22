@@ -31,8 +31,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
-    compile files('libs/jackson-databind-2.2.3.jar')
-    compile files('libs/gson-2.3.1.jar')
-    compile 'com.alibaba:fastjson:1.2.31'
     compile project(':xUtilsLibrary')
+    compile 'com.google.code.gson:gson:2.8.0'
 }
